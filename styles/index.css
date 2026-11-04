@@ -248,7 +248,6 @@ body {
   background-color: #050505;
   color: #ffffff;
   font-size: clamp(15px, 1.2vw, 18px);
-  padding-block: 32px;
 }
 
 :focus-visible {
@@ -312,9 +311,14 @@ body {
 .label {
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  letter-spacing: 0.1em;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+.label--bright {
+  color: #ffffff;
 }
 
 .container {
@@ -388,6 +392,14 @@ body {
 }
 .pill:hover .pill__arrow {
   transform: translate(3px, -3px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding-block: 26px;
 }
 
 /*# sourceMappingURL=index.css.map */

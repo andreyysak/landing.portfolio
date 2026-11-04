@@ -45,10 +45,17 @@
   color: $color-text-body;
 }
 
+// Mono caption: years, numbers, tags, metrics
 .label {
   font-family: $font-secondary;
   font-weight: $fw-regular;
-  font-size: $fz-xs;
-  line-height: 1.4;
-  letter-spacing: 0.1em;
+  font-size: $fz-xxs;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+
+  &--bright {
+    color: $color-text;
+  }
 }
