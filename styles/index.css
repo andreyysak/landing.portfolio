@@ -1,0 +1,393 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+strong,
+i,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  font-size: inherit;
+}
+
+html {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+*::-webkit-input-placeholder {
+  color: #b3b3b3;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #b3b3b3;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #b3b3b3;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #b3b3b3;
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  min-height: 100dvh;
+}
+
+body {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  background-color: #050505;
+  color: #ffffff;
+  font-size: clamp(15px, 1.2vw, 18px);
+  padding-block: 32px;
+}
+
+:focus-visible {
+  outline: 2px solid #ff3b2f;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.hero-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: clamp(38px, 8.4vw, 124px);
+  line-height: 0.93;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.project-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: clamp(22px, 3.4vw, 52px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: clamp(24px, 3.2vw, 46px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.lead {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: clamp(15px, 1.2vw, 18px);
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.label {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.container {
+  width: 100%;
+  max-width: 1560px;
+  margin-inline: auto;
+  padding-inline: clamp(18px, 4.5vw, 64px);
+}
+
+.section {
+  position: relative;
+  padding-block: clamp(56px, 8vw, 120px);
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: clamp(32px, 4vw, 64px);
+}
+
+.section-number {
+  flex-shrink: 0;
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-bg span {
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+.grid-bg span:first-child {
+  border-left: none;
+}
+
+@media (max-width: 700px) {
+  .grid-bg span:nth-child(3),
+  .grid-bg span:nth-child(5) {
+    border-left-color: transparent;
+  }
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.35em 0.9em;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+  vertical-align: middle;
+  transition: border-color 0.25s;
+}
+.pill:hover {
+  border-color: #ffffff;
+}
+.pill__arrow {
+  display: inline-block;
+  color: #ff3b2f;
+  transition: transform 0.25s;
+}
+.pill:hover .pill__arrow {
+  transform: translate(3px, -3px);
+}
+
+/*# sourceMappingURL=index.css.map */

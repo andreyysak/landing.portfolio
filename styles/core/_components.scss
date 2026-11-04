@@ -1,0 +1,32 @@
+@use "./vars" as *;
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.35em 0.9em;
+  border: 1px solid $color-line-strong;
+  border-radius: 999px;
+  font-family: $font-secondary;
+  font-weight: $fw-medium;
+  font-size: $fz-xs;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $color-text;
+  vertical-align: middle;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: $color-text;
+  }
+
+  &__arrow {
+    display: inline-block;
+    color: $color-accent;
+    transition: transform 0.25s;
+  }
+
+  &:hover &__arrow {
+    transform: translate(3px, -3px);
+  }
+}

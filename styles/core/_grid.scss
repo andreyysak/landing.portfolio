@@ -1,0 +1,27 @@
+@use "./vars" as *;
+
+// 4 vertical lines at 20 / 40 / 60 / 80%
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  span {
+    border-left: 1px solid $color-line;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
+
+// up to 700px only the 20% and 60% lines remain
+@media (max-width: $bp-mobile) {
+  .grid-bg span:nth-child(3),
+  .grid-bg span:nth-child(5) {
+    border-left-color: transparent;
+  }
+}

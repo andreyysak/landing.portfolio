@@ -1,0 +1,54 @@
+@use "./vars" as *;
+
+.hero-title {
+  font-family: $font;
+  font-weight: $fw-extra;
+  font-size: $fz-xxl;
+  line-height: 0.93;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.project-title {
+  font-family: $font;
+  font-weight: $fw-extra;
+  font-size: $fz-xl;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.section-title {
+  font-family: $font;
+  font-weight: $fw-extra;
+  font-size: $fz-lg;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.lead {
+  font-family: $font;
+  font-weight: $fw-regular;
+  font-size: $fz-md;
+  line-height: 1.4;
+  color: $color-text;
+}
+
+.text {
+  font-family: $font;
+  font-weight: $fw-regular;
+  font-size: $fz-sm;
+  line-height: 1.6;
+  color: $color-text-body;
+}
+
+.label {
+  font-family: $font-secondary;
+  font-weight: $fw-regular;
+  font-size: $fz-xs;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
