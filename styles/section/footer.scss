@@ -1,0 +1,12 @@
+@use "../core/vars" as *;
+
+.footer {
+  margin-top: auto;
+  padding: 22px 0 30px;
+  border-top: 1px solid $color-line;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}

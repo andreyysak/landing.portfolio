@@ -6,6 +6,9 @@ html {
 
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
   font-family: $font;
   background-color: $color-bg;
   color: $color-text;
