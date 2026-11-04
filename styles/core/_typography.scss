@@ -35,6 +35,10 @@
   font-size: $fz-md;
   line-height: 1.4;
   color: $color-text;
+
+  &--muted {
+    color: $color-text-body;
+  }
 }
 
 .text {

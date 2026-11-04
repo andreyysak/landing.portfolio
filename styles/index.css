@@ -299,6 +299,9 @@ body {
   line-height: 1.4;
   color: #ffffff;
 }
+.lead--muted {
+  color: rgba(255, 255, 255, 0.7);
+}
 
 .text {
   font-family: "Manrope", sans-serif;
@@ -400,6 +403,46 @@ body {
   align-items: baseline;
   gap: 20px;
   padding-block: 26px;
+}
+
+.hero {
+  padding-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.hero__title {
+  display: flex;
+  flex-direction: column;
+}
+.hero__line:nth-child(2) {
+  transform: translateX(4vw);
+}
+.hero__line:last-child {
+  transform: translateX(8vw);
+}
+.hero__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 56px;
+}
+.hero__description {
+  max-width: 375px;
+}
+.hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #35d07f;
 }
 
 /*# sourceMappingURL=index.css.map */
